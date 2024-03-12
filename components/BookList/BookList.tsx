@@ -16,7 +16,7 @@ const BookList = () => {
     return (
       <li key={book._id}>
         <Link href={`/books/updateBook/${book._id}`}>
-          {book.name} - ${book.price.toFixed(2)} - {book.category} - {book._id}
+          {book.name} - ${book.price.toFixed(2)} - {book.category}
         </Link>
         <button
           className="inline-block ml-5 mb-5 p-2 bg-slate-700 rounded-md"
