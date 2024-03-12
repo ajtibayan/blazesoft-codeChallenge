@@ -1,3 +1,4 @@
+import { books } from "@/data/books";
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 // Define a type for the slice state
@@ -9,14 +10,7 @@ export interface BookState {
 }
 
 // Define the initial state using that type
-const initialState: BookState[] = [
-  {
-    _id: "100001",
-    name: "Book One",
-    price: 10,
-    category: "Category",
-  },
-];
+const initialState: BookState[] = books;
 
 export const bookSlice = createSlice({
   name: "books",
